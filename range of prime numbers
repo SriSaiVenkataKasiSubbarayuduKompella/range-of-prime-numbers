@@ -1,0 +1,9 @@
+n1=int(input("enter starting point"))
+n2=int(input("enter ending point"))
+for j in range(n1,n2+1):
+    cnt=0
+    for i in range(n1,n2+1):
+        if n1%i==0:
+            cnt+=1
+    if cnt==2:
+        print(n1,"prime")
